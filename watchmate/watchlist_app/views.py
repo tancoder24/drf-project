@@ -1,20 +1,20 @@
-from django.shortcuts import render
-from django.http import JsonResponse
+# from django.shortcuts import render
+# from django.http import JsonResponse
 
-from watchlist_app.models import Movie
+# from watchlist_app.models import Movie
 
-def movie_list(request):
-    movies = Movie.objects.all()
-    data = {'movies': list(movies.values())}
+# def movie_list(request):
+#     movies = Movie.objects.all()
+#     data = {'movies': list(movies.values())}
     
-    return JsonResponse(data)
+#     return JsonResponse(data)
 
-def movie_detail(request, pk):
-    movie = Movie.objects.get(pk=pk)
-    data = {
-        'name': movie.name,
-        'desciption': movie.description,
-        'active': movie.active
-    }
+# def movie_detail(request, pk):
+#     movie = Movie.objects.get(pk=pk)
+#     data = {
+#         'name': movie.name,
+#         'desciption': movie.description,
+#         'active': movie.active
+#     }
     
-    return JsonResponse(data)
+#     return JsonResponse(data)

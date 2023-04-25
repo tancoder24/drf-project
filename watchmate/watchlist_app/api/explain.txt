@@ -1,0 +1,1 @@
+except the models all other things like urls, views, serializers comes under api folder inside app
