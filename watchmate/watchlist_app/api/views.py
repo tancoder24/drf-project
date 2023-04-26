@@ -39,5 +39,5 @@ def movie_detail(request, pk):
     
     elif request.method == "DELETE":
         movie.delete()
-        return Response()
+        return Response(status = 404)
         
